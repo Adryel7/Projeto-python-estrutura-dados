@@ -1,6 +1,6 @@
 # Sistema de Agenda Eletrônica**
 
-![Demo da Aplicação](assets/screenshot.png)
+![Demo da Aplicação](assets/Screenshot.png)
 
 ## 📜 Descrição
 
@@ -54,6 +54,7 @@ pip install -r requirements.txt
 
 # 5. Execute a aplicação
 python src/main.py
+```
 
 ---
 
