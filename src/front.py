@@ -13,18 +13,18 @@ class Gui(): #Classe de interface grafica
     txtNome = StringVar()
     txtSobrenome = StringVar()
     txtEmail = StringVar()
-    txtCPF = StringVar()
+    txtTelefone = StringVar()
 
     #Objetos que farão parte das janelas
     lblnome = Label(window, text="Nome")
     lblsobrenome = Label(window, text="Sobrenome")
     lblemail = Label(window, text="Email")
-    lblcpf = Label(window, text="CPF")
+    lblTelefone = Label(window, text="Telefone")
 
     entNome = Entry(window, textvariable=txtNome, width=width_entry)
     entSobrenome = Entry(window, textvariable=txtSobrenome, width=width_entry)
     entEmail = Entry(window, textvariable=txtEmail, width=width_entry)
-    entCPF = Entry(window, textvariable=txtCPF, width=width_entry)
+    entTelefone = Entry(window, textvariable=txtTelefone, width=width_entry)
     
     listClientes = Listbox(window, width=100)
     
@@ -41,12 +41,12 @@ class Gui(): #Classe de interface grafica
     lblnome.grid(row=0, column=0)
     lblsobrenome.grid(row=1, column=0)
     lblemail.grid(row=2, column=0)
-    lblcpf.grid(row=3, column=0)
+    lblTelefone.grid(row=3, column=0)
     
     entNome.grid(row=0, column=1, padx=50, pady=50)
     entSobrenome.grid(row=1, column=1)
     entEmail.grid(row=2, column=1)
-    entCPF.grid(row=3, column=1)
+    entTelefone.grid(row=3, column=1)
     
     listClientes.grid(row=0, column=2, rowspan=10)
     scrollClientes.grid(row=0, column=6, rowspan=10)

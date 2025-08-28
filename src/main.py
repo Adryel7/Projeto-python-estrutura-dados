@@ -12,16 +12,16 @@ def view_command():
     
 def search_command():
     app.listClientes.delete(0, END)
-    rows = core.search(app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtCPF.get())
+    rows = core.search(app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtTelefone.get())
     for r in rows:
         app.listClientes.insert(END, r)
         
 def insert_command():
-    core.insert(app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtCPF.get())
+    core.insert(app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtTelefone.get())
     view_command()
     
 def update_command():
-    core.update(selected[0], app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtCPF.get())
+    core.update(selected[0], app.txtNome.get(), app.txtSobrenome.get(), app.txtEmail.get(), app.txtTelefone.get())
     view_command()
     
 def del_command():
@@ -40,8 +40,8 @@ def getSelectedRow(event):
     app.entSobrenome.insert(END, selected[2])
     app.entEmail.delete(0, END)
     app.entEmail.insert(END, selected[3])
-    app.entCPF.delete(0, END)
-    app.entCPF.insert(END, selected[4])
+    app.entTelefone.delete(0, END)
+    app.entTelefone.insert(END, selected[4])
     return selected
 
 if __name__ == "__main__":
