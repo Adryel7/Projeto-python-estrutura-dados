@@ -1,6 +1,6 @@
 # Sistema de Agenda Eletrônica**
 
-![Demo da Aplicação](assets/screenshot.png)
+![Demo da Aplicação](assets/Screenshot.png)
 
 ## 📜 Descrição
 
